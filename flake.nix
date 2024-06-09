@@ -20,10 +20,12 @@
         devShells.default = pkgs.mkShell rec {
           buildInputs = with pkgs;
             [
-              (python3.withPackages (p:
-                with p; [
-                  kicad
-                ]))
+              # (python3.withPackages (p:
+              #   with p; [
+              #     kicad
+              #   ]))
+              kicad
+              openjdk17
             ]
             ++ (with packages; [
               freerouting
