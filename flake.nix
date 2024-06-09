@@ -17,7 +17,7 @@
           freerouting = pkgs.callPackage ./pkgs/freerouting {};
           default = freerouting;
         };
-        devShels.default = pkgs.mkShell rec {
+        devShells.default = pkgs.mkShell rec {
           buildInputs = with pkgs;
             [
               (python3.withPackages (p:
